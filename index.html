@@ -22,93 +22,92 @@
 <body>
   <div class="wrapper">
     <div class="container">
-      <div class="header">
+
+      <!-- Header landmark -->
+      <header class="header">
         <div class="header__box">
-          <img src="./images/calendar.png" alt="kalendar belgisi" style="margin-top: -3px;" class="header__text__img"
+          <img src="./images/calendar.png" alt="Kalendar belgisi" style="margin-top: -3px;" class="header__text__img"
             width="18" height="18" loading="lazy" decoding="async">
-          <p class="header__text">
-            4 kun bepul
-          </p>
+          <p class="header__text">4 kun bepul</p>
         </div>
         <p class="header__time">20:00</p>
-      </div>
+      </header>
 
-
+      <!-- ✅ Main landmark (PageSpeed shuni xohlayapti) -->
       <main id="main-content">
-
         <h1 class="title">
-          Pul jamg'arishni va har oy <br> <span>$100 dan boshlab investitsiya qilib</span> <br> passiv daromad
-          shakllantirishni <br>
+          Pul jamg'arishni va har oy <br>
+          <span>$100 dan boshlab investitsiya qilib</span> <br>
+          passiv daromad shakllantirishni <br>
           o'rganing
         </h1>
 
-        <img src="./a/images/speaker.avif" alt="Invertor rasmi" class="expert__img" decoding="async" loading="lazy"
+        <img src="./a/images/speaker.avif" alt="Investor rasmi" class="expert__img" decoding="async" loading="lazy"
           width="312" height="464">
 
         <div class="speaker__bg"></div>
 
-        <div class="event__box">
+        <section class="event__box" aria-label="Tadbir">
           <div class="event__info">
             <h3 class="event__info__title">100$ <span class="event__line"></span></h3>
-            <p class="event__info__description">BEPUL qatnashishga uguring</p>
+            <p class="event__info__description">BEPUL qatnashishga ulgurинг</p>
           </div>
-          <button class="event__btn registerBtn">
+          <button class="event__btn registerBtn" type="button">
             bepul qatnashish
           </button>
-        </div>
+        </section>
 
-        <div class="timer__box" id="timer">02:00</div>
+        <div class="timer__box" id="timer" aria-label="Taymer">02:00</div>
 
-        <div class="description">
+        <section class="description" aria-label="Darsda nimalarni o'rganasiz">
           <h2 class="description__title">Onlayn darsga qatnashsangiz <br> nimalarni o'rganasiz?</h2>
 
           <ul class="description__row">
             <li class="description__col">
-              <img src="./images/learn/1.avif" loading="lazy" decoding="async" alt="icons">
-              <p class="description__text"><span>5 ta moliyaviy</span> erkinlik darajalari <br> va keyingi darajaga
-                o'tish
-              </p>
+              <img src="./images/learn/1.avif" loading="lazy" decoding="async" alt="Moliyaviy darajalar ikonasi">
+              <p class="description__text"><span>5 ta moliyaviy</span> erkinlik darajalari <br> va keyingi darajaga o'tish</p>
             </li>
             <li class="description__col">
-              <img src="./images/learn/2.avif" loading="lazy" decoding="async" alt="icons">
+              <img src="./images/learn/2.avif" loading="lazy" decoding="async" alt="Pul nazorati ikonasi">
               <p class="description__text"><span>Pul</span> sezilmasdan <span>yo'qolishini</span> <br> oldini olish</p>
             </li>
             <li class="description__col">
-              <img src="./images/learn/3.avif" loading="lazy" decoding="async" alt="icons">
+              <img src="./images/learn/3.avif" loading="lazy" decoding="async" alt="Investitsiya ikonasi">
               <p class="description__text"><span>$50 - $100 dan</span> investitsiya <br> qilish qoidalari</p>
             </li>
             <li class="description__col">
-              <img src="./images/learn/4.avif" loading="lazy" decoding="async" alt="icons">
-              <p class="description__text">Katta <span>kapital qurish</span>ni 8 qadami
-              </p>
+              <img src="./images/learn/4.avif" loading="lazy" decoding="async" alt="Kapital qurish ikonasi">
+              <p class="description__text">Katta <span>kapital qurish</span>ni 8 qadami</p>
             </li>
           </ul>
-        </div>
-        <button class="event__btn registerBtn"
-          style="margin-left: auto; margin-right: auto; box-shadow: 0px 5px 0px 0px #023285; box-shadow: 0px 5px 20px 0px #C06C5980; max-width: 324px; width: 100%; margin-bottom: 76px;">
+        </section>
+
+        <button class="event__btn registerBtn" type="button"
+          style="box-shadow: 0px 5px 0px 0px #023285; box-shadow: 0px 5px 20px 0px #C06C5980; max-width: 324px; width: 100%; margin-bottom: 76px;">
           bepul qatnashish
         </button>
       </main>
 
     </div>
-
   </div>
 
-  <!-- Modal -->
-  <div id="registrationModal" class="homeModal" style="display: none">
+  <!-- Modal (main ichiga tiqma, to'g'ri shu yerda tursin) -->
+  <div id="registrationModal" class="homeModal" style="display: none" role="dialog" aria-modal="true"
+    aria-labelledby="modalTitle">
     <div class="homeModalOverlay"></div>
     <div class="homeFormContainer">
-      <button class="closeButton" id="closeModalBtn">
+      <button class="closeButton" id="closeModalBtn" type="button" aria-label="Yopish">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
           <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
       </button>
       <div class="homeFormTop">
-        <h1 class="homeFormTopTitle">
+        <h1 class="homeFormTopTitle" id="modalTitle">
           Bepul darsga <br />
           RO'YXATDAN O'TISH
         </h1>
       </div>
+
       <form id="registrationForm" name="contact-form">
         <div class="HomeFormRow">
           <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
@@ -130,13 +129,14 @@
             ❌ Telefon raqam mos emas!
           </p>
         </div>
-        <button type="submit" class="HomeFormBtn" id="submitBtn">
-          ro’yxatdan o’tish </button>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">ro’yxatdan o’tish</button>
       </form>
     </div>
   </div>
 
   <script defer src="./js/app.js"></script>
 </body>
+
 
 </html>
