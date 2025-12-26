@@ -18,64 +18,70 @@
 <body>
   <div class="date">
     <div class="container date__container">
-      <div class="date__top registerBtn">
+
+      <header class="date__top registerBtn">
         <div class="date__top-left">
           <div class="date__top-left-dot"></div>
           <h4 class="date__top-left-title">4 kun bepul</h4>
         </div>
-      </div>
+      </header>
 
-      <h1 class="date__inner-title">
-        Pul jamg'arishni va har oy <br> <span>$100 dan boshlab investitsiya qilib</span> <br> passiv daromad shakllantirishni <br>
-        o'rganing
-      </h1>
+      <main id="main-content">
+        <h1 class="date__inner-title">
+          Pul jamg'arishni va har oy <br>
+          <span>$100 dan boshlab investitsiya qilib</span> <br>
+          passiv daromad shakllantirishni <br>
+          o'rganing
+        </h1>
 
-      <div class="center">
-        <h4 class="date__inner-list-title">Bepul darsda siz:</h4>
+        <div class="center">
+          <h4 class="date__inner-list-title">Bepul darsda siz:</h4>
 
-        <ul class="date__inner-list">
-          <li class="date__inner-item">
-            — 5 ta moliyaviy erkinlik <br> darajalari va keyingi <br> darajaga o'tishni
-          </li>
-          <li class="date__inner-item">
-            — Pul sezilmasdan yo'qolishini <br> oldini olishni
-          </li>
-          <li class="date__inner-item">
-            — $50 - $100 dan investitsiya <br> qilish qoidalari va Katta kapital <br> qurishni 8 qadamini o’rganasiz
-          </li>
-        </ul>
+          <ul class="date__inner-list">
+            <li class="date__inner-item">
+              — 5 ta moliyaviy erkinlik <br> darajalari va keyingi <br> darajaga o'tishni
+            </li>
+            <li class="date__inner-item">
+              — Pul sezilmasdan yo'qolishini <br> oldini olishni
+            </li>
+            <li class="date__inner-item">
+              — $50 - $100 dan investitsiya <br> qilish qoidalari va Katta kapital <br> qurishni 8 qadamini o’rganasiz
+            </li>
+          </ul>
 
-        <img src="./images/speaker.avif" alt="Invertor rasmi" decoding="async" loading="lazy"
-          class="date__img speakerImg" width="250" height="372">
+          <img src="./images/speaker.avif" alt="Investor rasmi" decoding="async" loading="lazy"
+            class="date__img speakerImg" width="250" height="372">
 
-        <div class="flex">
-          <button class="date__bottom-btn registerBtn">ro’yxatdan o’tish >>></button>
-          <div class="date__timer" id="timer">02:00</div>
+          <div class="flex">
+            <button class="date__bottom-btn registerBtn" type="button">ro’yxatdan o’tish &gt;&gt;&gt;</button>
+            <div class="date__timer" id="timer" aria-label="Taymer">02:00</div>
+          </div>
+
+          <div class="gradient"></div>
         </div>
 
-        <div class="gradient"></div>
-      </div>
+        <p class="free__text registerBtn">
+          Yopiq kanalga qo’shilish uchun bosing
+          <img src="./images/arrow.avif" alt="Yo‘nalish ko‘rsatkichi" decoding="async" loading="lazy"
+            class="free__text__arrow" width="88" height="88">
+        </p>
+      </main>
 
-      <p class="free__text registerBtn">
-        Yopiq kanalga qo’shilish uchun bosing
-        <img src="./images/arrow.avif" alt="arrow" decoding="async" loading="lazy" class="free__text__arrow" width="88"
-          height="88">
-      </p>
     </div>
   </div>
 
-  <!-- Modal -->
-  <div id="registrationModal" class="homeModal" style="display: none">
+  <div id="registrationModal" class="homeModal" style="display: none" role="dialog" aria-modal="true"
+    aria-labelledby="modalTitle">
     <div class="homeModalOverlay"></div>
     <div class="homeFormContainer">
-      <button class="closeButton" id="closeModalBtn">
+      <button class="closeButton" id="closeModalBtn" type="button" aria-label="Yopish">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
           <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
       </button>
 
       <div class="homeFormTop">
-        <h1 class="homeFormTopTitle">
+        <h1 class="homeFormTopTitle" id="modalTitle">
           Bepul darsga <br />
           RO'YXATDAN O'TISH
         </h1>
