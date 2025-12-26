@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isroil Samatov</title>
+  <style>
+* {margin: 0;padding: 0;box-sizing: border-box;}body {font-family: Montserrat, sans-serif;font-weight: 400;background-color: #292826;}a {text-decoration: none;color: white;}a, li, ol, ul {list-style: none;text-decoration: none;}.container {max-width: 1624px;width: 100%;margin: 0 auto;padding: 0 20px;position: relative;}.date {padding: 13px 0;color: #fff;overflow: hidden;min-height: 100vh;text-align: center;}.date__container {display: flex;align-items: center;flex-direction: column;max-width: 400px;padding-left: 20px;padding-right: 20px;position: relative;}.date__top {display: flex;align-items: center;flex-direction: column;margin-bottom: 16px;}.date__top-left {display: flex;align-items: center;justify-content: center;padding: 5px 12px;border-radius: 50px;border: 1px solid rgba(255, 255, 255, 0.4);}.date__top-left-dot {background-color: #33AD15;width: 11px;height: 11px;border-radius: 50%;margin-right: 4px;}.date__top-left-title {font-weight: 500;font-size: 13px;}.date__inner-title {font-family: "Big Shoulders Display", sans-serif;font-weight: 900;font-size: clamp(23px, 7vw, 26px);text-transform: uppercase;max-width: 349px;line-height: 150%;margin-bottom: 7px;position: relative;}.date__inner-title span {color: #F9D142;font-size: clamp(30px, 9vw, 32px);}.center {padding-top: 30px;width: 100%;position: relative;}.date__inner-list-title {font-size: 13px;line-height: 20px;margin-bottom: 6px;font-weight: 700;color: #808080;text-align: left;}.date__inner-list {text-align: start;margin-bottom: 20px;max-width: 230px;width: 100%;position: relative;z-index: 30;display: flex;flex-direction: column;gap: 10px;}.date__inner-item {font-family: Montserrat, sans-serif;font-size: 14px;line-height: 19px;font-weight: 400;}.date__img {position: absolute;top: 0;width: 250px;height: 372px;right: -80px;object-fit: contain;object-position: top;z-index: 20;}.flex {display: flex;align-items: start;flex-direction: column-reverse;gap: 20px;margin-bottom: 30px;}.date__timer {max-width: fit-content;background-color: #fff;color: #000;padding: 6px 12px;display: flex;align-items: center;justify-content: center;font-size: 28px;font-weight: 700;width: 100%;border-radius: 5px;box-shadow: 4px 4px 20px 1px #F9D14299;position: relative;z-index: 30;}.date__bottom-btn {font-weight: 800;font-size: 18px;padding: 22px 0;border: none;height: 74px;cursor: pointer;border-radius: 20px;background: linear-gradient(90deg, #FFC65A 0%, #FFE8BC 42.79%, #FFE8BC 56.25%, #FFC65A 100%);box-shadow: 0px 5px 0px 0px #C78200;color: #483002;max-width: 331px;width: 100%;display: flex;align-items: center;justify-content: center;gap: 13px;text-transform: uppercase;position: relative;z-index: 30;margin: 10px auto 11px;outline: none;}.gradient {background: linear-gradient(0deg, #292826 56.62%, rgba(23, 23, 23, 0) 100%);width: 200%;left: -50%;height: 420px;position: absolute;bottom: -100px;z-index: 28;}.free__text {font-size: 12px;position: relative;z-index: 30;margin-top: -55px;margin-right: -45px;margin-bottom: 15px;display: flex;justify-content: center;align-items: end;}.free__text img {margin-bottom: -27px;margin-left: -7px;}@media screen and (max-width: 350px) {.container {padding: 0 10px;}}
+  </style>
+
+  <link rel="stylesheet" href="./css/modal.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/modal.css" />
+  </noscript>
+</head>
+
+<body>
+  <div class="date">
+    <div class="container date__container">
+      <div class="date__top registerBtn">
+        <div class="date__top-left">
+          <div class="date__top-left-dot"></div>
+          <h4 class="date__top-left-title">4 kun bepul</h4>
+        </div>
+      </div>
+
+      <h1 class="date__inner-title">
+        investitsiya orqali oyiga <br>
+        <span>100$ dan boshlab 50 000$</span> <br>
+        gacha kapital yig'ishni o'rganing
+      </h1>
+
+      <div class="center">
+        <h4 class="date__inner-list-title">Bepul darsda siz:</h4>
+
+        <ul class="date__inner-list">
+          <li class="date__inner-item">
+            — 5 ta moliyaviy erkinlik <br> darajalari va keyingi <br> darajaga o'tishni
+          </li>
+          <li class="date__inner-item">
+            — Pul sezilmasdan yo'qolishini <br> oldini olishni
+          </li>
+          <li class="date__inner-item">
+            — $50 - $100 dan investitsiya <br> qilish qoidalari va Katta kapital <br> qurishni 8 qadamini o’rganasiz
+          </li>
+        </ul>
+
+        <img src="./images/speaker.avif" alt="Invertor rasmi" decoding="async" loading="lazy"
+          class="date__img speakerImg" width="250" height="372">
+
+        <div class="flex">
+          <button class="date__bottom-btn registerBtn">ro’yxatdan o’tish >>></button>
+          <div class="date__timer" id="timer">02:00</div>
+        </div>
+
+        <div class="gradient"></div>
+      </div>
+
+      <p class="free__text registerBtn">
+        Yopiq kanalga qo’shilish uchun bosing
+        <img src="./images/arrow.avif" alt="arrow" decoding="async" loading="lazy" class="free__text__arrow" width="88"
+          height="88">
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Bepul darsga <br />
+          RO'YXATDAN O'TISH
+        </h1>
+      </div>
+
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+
+          <div class="phone-input-container">
+            <div class="country-selector">
+              <div class="selected-country" id="selectedCountry">
+                <span id="selectedCountryCode">+998</span>
+                <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+              <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+            </div>
+
+            <input class="HomeFormRowInput" type="tel" id="phone" name="phone" placeholder="88 888 88 88"
+              autocomplete="tel" />
+          </div>
+
+          <p class="homeFormErrorText" id="phoneError" style="display: none">
+            ❌ Telefon raqam mos emas!
+          </p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">
+          ro’yxatdan o’tish
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script defer src="../js/app.js"></script>
+</body>
+
+</html>
